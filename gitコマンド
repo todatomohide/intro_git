@@ -1,0 +1,29 @@
+
+# ステージングエリアに対して
+git add ファイル名
+git rm ファイル名　
+
+# ローカルリポジトリに対して
+git commit -m "コミットメッセージ"
+### 直前のコミットのコミットメッセージを変更する
+git commit --amend -m "コミットメッセージ"
+git diff --staged
+git restore --staged 
+
+# リモートリポジトリに対して
+git push
+
+#　ブランチを切り替える
+git checkout -b develop
+git checkout -b feature-1
+
+git checkout develop  //ブランチを取り込むブランチに移る
+git merge feature-1  //取り込みたいブランチ名を指定してマージ
+
+git branch
+#　2つのブランチの差を確認
+diff main feature1
+diff develop feature1
+
+# コミット
+git commit -m "Add time files"
